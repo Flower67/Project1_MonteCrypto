@@ -9,26 +9,27 @@ Our group looked at the performance of different investment instruments over tim
 
 ## Questions 
 
-#** Question 1: Over the last five years, what type of investment provided the greatest return? **
-* Answer: The Cryptocurrency portfolio (a mix of BTC, ETH, and LTC) had the best historical returns over a five year period. *
-(/Images/Daily_Returns.png)
-(/Images/Cumulative_Returns.png)
+**Question 1: Over the last five years, what type of investment provided the greatest return?**
+*Answer: The Cryptocurrency portfolio (a mix of BTC, ETH, and LTC) had the best historical returns over a five year period.*
+
+[Daily Returns](/Images/Daily_Returns.png)
+[Cumulative Returns](/Images/Cumulative_Returns.png)
 
 
 
-#** Question 2: Which type of investment is projected to have the greatest return over the next five years? **
-* Answer: The Cryptocurrency portfolio (a mix of BTC, ETH, and LTC) had the best historical returns over a five year period.*
+**Question 2: Which type of investment is projected to have the greatest return over the next five years?**
+*Answer: The Cryptocurrency portfolio (a mix of BTC, ETH, and LTC) had the best historical returns over a five year period.*
 
 
 
-#** Question 3: What's the ideal portfolio mix of all investments? **
-* Answer: The ideal portfolio mix of all investment instruments was: 
-We were surprised to see that while Crypto currency had the best historical returns, it didn't compose a large portion of the ideal portfolio.  We attributed this to the fact that crypto was high return, but it was also high risk.  When we looked to optimize the Sharpe ratio, crypto only represented X% of the total porfolio. 
+**Question 3: What's the ideal portfolio mix of all investments?**
+*Answer: The ideal portfolio mix of all investment instruments was: X, X, X...
+We were surprised to see that while Crypto currency had the best historical returns, it didn't compose a large portion of the ideal portfolio.  We attributed this to the fact that crypto was high return, but it was also high risk.  When we looked to optimize the Sharpe ratio, crypto only represented X% of the total porfolio.* 
 
 
 
-#** Question 4: Did COVID impact the ideal optimal portfolio? **
-* Answer: Yes, the portfolio weights changed.  
+**Question 4: Did COVID impact the ideal optimal portfolio?**
+*Answer: Yes, the portfolio weights changed.*  
 
 
  Create a README.md in your repo with a write-up summarizing your major findings. This should include a heading for each question you asked of your data and under each heading a short description of what you found and any relevant plots.
