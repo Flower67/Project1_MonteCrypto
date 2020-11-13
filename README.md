@@ -14,7 +14,7 @@ Our group looked at the performance of different investment instruments over tim
 
 ![Daily Returns](/Images/Daily_Returns.png)
 
-![Cumulative Returns](/Images/Cumulative_Returns.jpg)
+![Cumulative Returns](/Images/Cumulative_Returns.png)
 
 
 
