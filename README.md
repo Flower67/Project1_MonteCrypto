@@ -12,8 +12,9 @@ Our group looked at the performance of different investment instruments over tim
 **Question 1: Over the last five years, what type of investment provided the greatest return?**
 *Answer: The Cryptocurrency portfolio (a mix of BTC, ETH, and LTC) had the best historical returns over a five year period.*
 
-[Daily Returns](/Images/Daily_Returns.jpg)
-[Cumulative Returns](/Images/Cumulative_Returns.jpg)
+![Daily Returns](/Images/Daily_Returns.jpg)
+
+![Cumulative Returns](/Images/Cumulative_Returns.jpg)
 
 
 
