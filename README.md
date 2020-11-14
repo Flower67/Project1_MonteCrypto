@@ -28,12 +28,16 @@ There is a 95% chance that an pre-COVID initial investment of $100,000 in stocks
 
 There is a 95% chance that an pre-COVID initial investment of $100,000 in S&P 500 over the next 5 years will end within in the range of $90638.08 and $299660.57.  This amount changed to a range of $15151.74 and $416304.94 using Post-COVID data.  
 
+Agricultural Commodities Monte Carlo
 ![Agricultural Commodities Monte Carlo](/Images/AgComm_Monte.png)
 
+Metals Monte Carlo
 ![Metals Monte Carlo](/Images/Metals_Monte.png)
 
+Stocks Monte Carlo
 ![Stocks Monte Carlo](/Images/Stocks_Monte.png)
 
+S&P 500 Monte Carlo
 ![S&P 500 Monte Carlo](/Images/SP500_Monte.png)
 
 
@@ -43,6 +47,5 @@ The ideal portfolio is a mix of all investments, and changed significantly pre- 
 
 ![Optimum Portfolio](/Images/Optimal_portfolio.png)
 
-We were surprised to see that while Crypto currency had the best historical returns, it didn't compose a large portion of the ideal portfolio.  We attributed this to the fact that crypto was high return, but it was also high risk and showed significant volatility.  
-
+We were surprised to see that while Cryptocurrency had the best historical returns, it didn't compose a large portion of the optimal portfolio.  We attributed this to the fact that crypto was high return, but it was also high risk and showed significant volatility.  We were also surprised to see items we considered low return, such as Soybeans, to be such a large holding in the optimal portfolio post-COVID.  After researching soybean performance, we realized this occurred because of certain weather and international impacts which caused soybean prices to rise significantly in the post-COVID time period. 
 
