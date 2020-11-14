@@ -35,6 +35,7 @@ There is a 95% chance that an pre-COVID initial investment of $100,000 in S&P 50
 S&P500 Pre-COVID
 ![S&P Pre-COVID](/Images/SP500_pre_covid.png)
 
+
 S&P500 Post-COVID
 ![S&P Post-COVID](/Images/SP500_post_covid.png)
 
@@ -47,14 +48,15 @@ S&P500 Post-COVID
 ![Optimum Portfolio](/Images/Optimal_portfolio.png)
 
 Sharpe Total
-
 ![S&P Post-COVID](/Images/Sharpe_total.png)
+
 
 Sharpe Pre-COVID
 ![S&P Post-COVID](/Images/Sharpe_precovid.png)
 
-SharpePost-COVID
-![S&P Post-COVID](/Images/SP500_postcovid.png)
+
+Sharpe Post-COVID
+![S&P Post-COVID](/Images/Sharpe_postcovid.png)
 
 We were surprised to see that while crypto currency had the best historical returns, it didn't compose a large portion of the optimal portfolio.  We attributed this to the fact that crypto was high return, but it was also high risk with high volatility.  We were also surprised to see items we considered low return, such as soybeans, to be a large holding in the optimal portfolio post-COVID.  After researching soybean performance, we realized this occurred because certain weather and international impacts caused soybean prices to rise significantly in the post-COVID time period. 
 
