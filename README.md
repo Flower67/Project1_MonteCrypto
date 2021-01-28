@@ -1,62 +1,28 @@
-# **Project1_MonteCrypto**
+# Project 2: Sink or Swim
 
 ## Team: 
+Floriane Beyegue, Josh Jagget, Cassandra Johnson, Antonio Pinkston, and Rajiv Shrestha
 
-Cassandra Johnson, Ken Lindgren, Rawad Habib, Antonio Pinkston, Floriane Beyegue, Nigil Jeyashekar 
+## Overview 
 
-## Project Description: 
+Our group initially wanted to do a project that took sentiment scores from news stories about the election to see if this information could be used to predict stock market performance. However, we ran into challenges pulling a prolonged history of news stories for free with various APIs and being able to incorporate this into a ML model.  We ultimately changed our project to use data on Titanic passengers to predict the passengers' likelihood of survival.  
 
-Our group analyzed different investments to see which types of investments gave the greatest return over a 5 year horizon (since January 1, 2015), and which instruments were projected to give the greatest return in the future.  We wanted a diverse portfolio, and compared small portfolios of stocks, crypto currency, metals, agricultural commodities, and also an investment in a index fund tied to the S&P500.  
+We decided to run multiple ML models and compare the results of several models to determine the most effective and accurate model. The data was sourced from Kaggle as a part of their Titanic ML competition and was separated into two datasets--a training and a testing csv. Both datasets had the same features--survival, pclass, sex, age, number of siblings & spouses, number of parents & children, ticket number, fare price, cabin number, and lastly, port of embarkation--with survival being excluded from the testing dataset. We opted to only use survival, pclass, sex, age, number of siblings & spouses, number of parents & children, fare price, and port of embarkation for our analysis. We elected to use the training dataset to build our models with the goal of predicting survival in the testing dataset. The Neural Network model with multiple layers proved to be the most effective model in predicting survival. 
 
-We also wanted to determine what would be the 'optimal' portfolio mix of all investments, using the sharpe ratio to optimize risk and return.  We also tested if this 'optimal' mix would change when looking at investment performance pre-COVID vs. post-COVID using February 2020 as a cut-off date.  
+## Data Analysis 
+Using the training dataset, we conducted statistical analysis to identify characteristics of the ideal survivor and determine that 38.4% of passengers survived. Next, we pinpointed which features provided useful information in predicting survival. This allowed us to remove the Passenger ID, Name, Ticket, and Cabin fields. Lastly, we identified nulls and imputed them using the average value of a given field. This allowed for a more complete picture of the defining characteristics and provided us with a new training dataset to complete our machine learning analyses.
 
+### Survival Distribution Across Sex
+![Sex Survival Distribution](Images/female_male_survival.png)
 
-## Questions 
+## Models used and Conclusion 
+In order to predict overall survival in the testing dataset, we needed to use the training dataset to determine which ML model would predict survival most accurately. Thus, we utilized logistic regression, Support Vector Machine (SVM), Decision Trees, Random Forest, GaussianNB, MlpClassifier, and various Neural Network models. Each model utilized the same 10 features and 1 target variable (Survival). To achieve uniform train-test splits, all models were run with a random state of 78. Of our 8 models, the neural network 2 with more hidden layers proved to be the most correct at predicting survival with an 83% accuracy score. We then ran this model against our testing dataset and achieved a survival rate of 38.5%, which is within 0.1% of the survival rate achieved using statistical analysis. 
 
-**Question 1: Assuming investments in the S&P 500, a portfolio of stocks, commodities, metals, and cryptocurrency, from January 1, 2015 through October 31, 2020, which investment type has yielded the highest return??**
+### Model Performance
+![Model Performance](Images/accuracy_scores.png)
 
-*Answer: The Cryptocurrency portfolio (a mix of BTC, ETH, and LTC) had the best historical returns over a five year period.*
+## Dependencies 
 
-![Daily Returns](/Images/Daily_Returns.png)
-![Cumulative Returns](/Images/Cumulative_Returns.png)
-![Cumulative Returns Without Crypto](/Images/Investments_withoutcrypto.png)
+To run our code, you will need to install the following packages not previously used in class: 
 
-
-
-**Question 2: Which type of investment is projected to have the greatest return over the next five years?**
-
-*Answer: Investing in a stock portfolio projected the greatest return over 5 years using a Monte Carlo Simulation, using the S&P500 performance as a benchmark.*  
-
-There is a 95% chance that an pre-COVID initial investment of $100,000 in stocks over the next 5 years will end within in the range of $140212.92 and $437573.29.  This amount changed to a range of $13778.17 and $250966.36 using Post-COVID data.
-
-There is a 95% chance that an pre-COVID initial investment of $100,000 in S&P 500 over the next 5 years will end within in the range of $90638.08 and $299660.57.  This amount changed to a range of $15151.74 and $416304.94 using Post-COVID data.  
-
-
-S&P500 Pre-COVID
-![S&P Pre-COVID](/Images/SP500_pre_covid.png)
-
-
-S&P500 Post-COVID
-![S&P Post-COVID](/Images/SP500_post_covid.png)
-
-
-**Question 3: What's the ideal portfolio mix of all investments?**
-**Question 4: Did COVID impact the ideal optimal portfolio?**
-
-*Answer: The ideal portfolio is a mix of all investments, and changed significantly pre- and post-COVID.  For example the largest 3 investments in the pre-COVID optimal portfolio are: Gold, AAPL, and AMZN.  The 3 largest investments in the post-COVID portfolio are: ETH, Soybeans, and AMZN.*
-
-![Optimum Portfolio](/Images/Optimal_portfolio.png)
-
-Sharpe Total
-![S&P Post-COVID](/Images/Sharpe_total.png)
-
-
-Sharpe Pre-COVID
-![S&P Post-COVID](/Images/Sharpe_precovid.png)
-
-
-Sharpe Post-COVID
-![S&P Post-COVID](/Images/Sharpe_postcovid.png)
-
-We were surprised to see that while crypto currency had the best historical returns, it didn't compose a large portion of the optimal portfolio.  We attributed this to the fact that crypto was high return, but it was also high risk with high volatility.  We were also surprised to see items we considered low return, such as soybeans, to be a large holding in the optimal portfolio post-COVID.  After researching soybean performance, we realized this occurred because certain weather and international impacts caused soybean prices to rise significantly in the post-COVID time period. 
-
+Yellowbrick: pip install yellowbrick 
